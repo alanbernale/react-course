@@ -1,0 +1,19 @@
+.card {
+    background-color: #202020;
+    color: aliceblue;
+    padding: 10px;
+}
+
+.card:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.bg-green {
+    background-color: green;
+    padding: 10px;
+}
+
+.bg-red {
+    background-color: red;
+    padding: 10px;
+}

@@ -3,11 +3,11 @@ import ReactDOM from "react-dom/client"
 import {Greeting, UserCard} from "./Greeting"
 import Product, {Navbar} from "./Product"
 import {Button} from "./Button"
+import {TaskCard} from "./Task"
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <>
-        <Button text="Click Me" />
-        <Button text="Pay" />
-        <Button text="Go To" name="Joe"/>
+        <TaskCard ready={true}/>
+        <TaskCard ready={false}/>
     </>
 )
