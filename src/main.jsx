@@ -1,10 +1,18 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import './index.css'
+import React from "react"
+import ReactDOM from "react-dom/client"
+
+function Greeting() {
+    return <div>
+        <h1>Este es un componente.</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+}
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <div>
+        <Greeting/>
+        <Greeting/>
+        <Greeting/>
+        <Greeting/>
+    </div>
 )
