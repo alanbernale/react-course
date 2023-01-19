@@ -1,7 +1,15 @@
-import {useState} from "react"
+import {useEffect, useState} from "react"
 
 export function Counter() {
     const [counter, setCounter] = useState(1)
+
+    useEffect(() => {
+        console.log('render with dependency counter')
+    }, [counter])
+
+    useEffect(() => {
+        console.log('render default')
+    }, [])
 
     return <div>
         <h1>Counter: {counter}</h1>
